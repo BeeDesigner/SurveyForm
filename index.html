@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>SurveyPractice</title>
+</head>
+<body>
+    <div id="main">
+    <div id="signup">
+        <h1>Sign Up</h1>
+    </div>
+    <main class="body">
+        <form action="result.html" method="get">
+            <div>
+                <fieldset>
+                    <legend>Your Basic Info</legend>
+                    <div id="name"><br>
+                        <label for="name">Name:</label><br>
+                        <input class="data" type="text" name="uname" id="name">
+                    </div><br>
+                    <div id="email" >
+                        <label for="email">Email:</label><br>
+                        <input class="data" type="email" name="email" id="email">
+                    </div><br>
+                    <div id="password">
+                        <label for="password">Password:</label><br>
+                        <input class="data" type="password" name="password" id="password">
+                    </div><br>
+                    <div>
+                        <label for="age">Age:</label><br>
+                        <input type="radio" name="age" id="age">Under 13 <br>
+                        <input type="radio" name="age" id="age">Over 13 <br>
+                    </div>
+                </fieldset>
+            </div><br>
+            <div>
+                <fieldset>
+                    <legend>Your Profile</legend>
+                    <div>
+                        <label for="bio">Bio:</label><br>
+                        <textarea class="data" name="bio" id="bio" cols="20%" rows="4%"></textarea>
+                    </div><br>
+                    <div>
+                        <label for="role">Job Role:</label><br>
+                        <select class="data" name="jobrole" id="role" >
+                            <optgroup label="Web">
+                                <option value="Front-End-Developer">Front-End-Developer</option>
+                                <option value="JS Developer">JS Developer</option>
+                                <option value="Python Developer">Python Developer</option>
+                                <option value="Django Developer">Django Developer</option>
+                                <option value="Web Designer">Web Designer</option>
+                                <option value="Wordpress Developer">Wordpress Developer</option>
+                            </optgroup>
+                            <optgroup label="Mobile">
+                                <option value="Android Developer">Android Developer</option>
+                                <option value="IOS Developer">IOS Developer</option>
+                                <option value="Mobile Designer">Mobile Designer</option>
+                            </optgroup>
+                            <optgroup label="Business">
+                                <option value="Business Owner">Business Owner</option>
+                                <option value="Freelancer">Freelancer</option>
+                            </optgroup>
+                        </select>
+                    </div><br>
+                    <div>
+                        <label for="interests">Interests:</label><br>
+                        <input type="checkbox" name="development" id="interests">Development <br>
+                        <input type="checkbox" name="design" id="interests">Design <br>
+                        <input type="checkbox" name="business" id="interests">Business <br>
+                    </div>
+                </fieldset>
+            </div><br>
+            <div id="submit">
+                <input type="submit" value="Sign Up">
+            </div>            
+        </form>
+    </main>
+    </div>
+</body>
+</html>
+
+<!-- <fieldset>
+    <legend>Choose your favorite monster</legend>
+
+    <input type="radio" id="kraken" name="monster">
+    <label for="kraken">Kraken</label><br/>
+
+    <input type="radio" id="sasquatch" name="monster">
+    <label for="sasquatch">Sasquatch</label><br/>
+
+    <input type="radio" id="mothman" name="monster">
+    <label for="mothman">Mothman</label>
+</fieldset> -->
